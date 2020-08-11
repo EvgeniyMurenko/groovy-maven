@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Credit broker",
+  "description": "Credit broker schema",
+  "type": "object",
+  "properties": {
+    "customer": {
+      "type" : "object",
+      "lastName": {
+        "description": "Last name",
+        "type": "string"
+      },
+      "firstName": {
+        "description": "First name",
+        "type": "string"
+      },
+      "middleName": {
+        "description": "Middle name",
+        "type": "string"
+      },
+      "sex": {
+        "description": "Sex",
+        "type": "string"
+      },
+      "birthDate": {
+        "description": "Birth date",
+        "type": "date-time"
+      },
+      "inn": {
+        "description": "Customer inn",
+        "type": "string"
+      },
+      "innDate": {
+        "description": "Customer inn date",
+        "type": "date-time"
+      },
+      "visualGrade": {
+        "description": "visualGrade",
+        "type": "string"
+      },
+      "maritalStatus": {
+        "description": "maritalStatus",
+        "type": "string"
+      },
+      "children": {
+        "description": "children",
+        "type": "integer",
+        "default": 0
+      },
+      "email": {
+        "description": "email",
+        "type": "string"
+      },
+      "mobilePhone": {
+        "description": "mobilePhone",
+        "type": "string"
+      },
+      "homePhone": {
+        "description": "homePhone",
+        "type": "string"
+      },
+      "required": ["firstName", "lastName", "middleName", "sex", "birthDate", "inn", "innDate", "visualGrade", "maritalStatus", "mobilePhone", "homePhone"]
+    }
+  }
+}

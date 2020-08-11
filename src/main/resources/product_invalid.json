@@ -1,0 +1,52 @@
+{
+  "customer": {
+    "lastName": "Герасименко",
+    "firstName": "Анастасия",
+    "middleName": "Николаевна",
+    "sex": "Жіноча",
+    "birthDate": "2019-11-10T22:00:00.000Z",
+    "inn": "7412369850",
+    "innDate": "2019-12-01T22:00:00.000Z",
+    "visualGrade": "Підозрілі документи",
+    "maritalStatus": "Не був у шлюбі",
+    "children": "0",
+    "id": 10199364,
+    "leId": 19679588,
+    "type": "INDIVIDUAL",
+    "email": "geranastasiia@gmail.com",
+    "mobilePhone": "380937870735",
+    "homePhone": null,
+    "workPhone": null,
+    "city": {
+      "id": 38046,
+      "value": "Чернигов",
+      "type": {
+        "id": 3,
+        "value": "Город"
+      },
+      "district": null,
+      "region": {
+        "id": 380460,
+        "value": "Черниговская",
+        "type": {
+          "id": 2,
+          "value": "Область"
+        }
+      }
+    },
+    "mobilePhoneStatus": "NOT_DEFINED",
+    "loyaltyCard": "+11126649479",
+    "loyaltyPointValue": null,
+    "loyaltyEmployee": false,
+    "loyaltyPartner": null,
+    "active": true,
+    "dateModify": "2020-02-25T16:48:30",
+    "bonuses": null,
+    "language": null,
+    "birthdayDiscount": false,
+    "registrationDate": "2019-11-27",
+    "lastPurchaseDateInternet": null,
+    "lastPurchaseDateRetail": null,
+    "lastPurchaseDatePickup": null
+  }
+}
