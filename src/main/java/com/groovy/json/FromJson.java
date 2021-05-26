@@ -1,33 +1,35 @@
 package com.groovy.json;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jayway.jsonpath.Configuration;
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.JsonPath;
+import com.jayway.jsonpath.Option;
+import com.jayway.jsonpath.PathNotFoundException;
+import com.jayway.jsonpath.TypeRef;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class FromJson {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JsonProcessingException {
 
-        /*String str = "[{\"crt_id\":8173,\"crt_name\":\"Страховий платiж МастерСервiс АМ 5 рокiв\",\"crt_price\":3199,\"crt_prior\":0,\"crt_ptype\":\"МастерСервис\",\"crt_type\":\"5 лет\",\"crt_descr_arr\":[]}]";
+        String str = "{\"parameters\":[{\"PARAM_0\":\"1\"}]}";
 
+        Map<String, Object> map = Map.of("parameters", List.of(Map.of("PARAM_0", 1)));
 
-        ObjectMapper objectMapper = new ObjectMapper();
+        Formatter f = new Formatter();
+        List<Map<String, Object>> result = f.getResult(map);
+        System.out.println(result);
 
-        try {
-            System.out.println(objectMapper.readValue(str, T22SaleServices.class));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
-        List<Integer> list = null;
-
-        if (!list.isEmpty()){
-            System.out.println("list no empty");
-            list.forEach(it -> System.out.println("it = "+it));
-        } else {
-            System.out.println("empty list");
-        }
     }
+
+
 }

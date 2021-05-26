@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
-    <facet type="Spring" name="Spring">
-      <configuration />
-    </facet>
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="groovy" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_9">
@@ -123,5 +125,11 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.persistence:javax.persistence-api:2.2" level="project" />
+    <orderEntry type="library" name="Maven: com.esotericsoftware.kryo:kryo5:5.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.openjdk.jol:jol-core:0.10" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.4.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.6" level="project" />
   </component>
 </module>
